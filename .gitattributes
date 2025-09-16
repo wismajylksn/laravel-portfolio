@@ -1,16 +1,12 @@
-# --- Git Diff rules (biar rapi kalau lihat diff di GitHub) ---
+
 *.blade.php diff=html
 *.css diff=css
 *.html diff=html
 *.md diff=markdown
 *.php diff=php
 
-# --- GitHub Linguist rules (supaya terdeteksi PHP/Laravel) ---
 *.php linguist-detectable=true
 *.blade.php linguist-detectable=true
-*.css linguist-detectable=false
 
-# --- Files not included in distribution (composer/package export) ---
-/.github export-ignore
-CHANGELOG.md export-ignore
-.styleci.yml export-ignore
+*.css linguist-detectable=false
+*.scss linguist-detectable=false
